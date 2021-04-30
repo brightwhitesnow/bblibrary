@@ -44,9 +44,10 @@ nav img {
 
 .banner {
   text-align: center;
-  height: 700px;
+  height: 100%;
   width: 100%;
   background-repeat: no-repeat;
+  background-size: 100%;
   background: url(https://th.bing.com/th/id/R80312187d09d7d388da55d08db69e957?rik=tShm6yWS5g6XtQ&riu=http%3a%2f%2fwww.documentsnap.com%2fwp-content%2fuploads%2f2016%2f07%2fstack-of-books-min.jpg&ehk=ksBMg7ZBftjEVhJs4zOIRwOqz9ihtRBbdkpjejsmWq0%3d&risl=&pid=ImgRaw);
 }
 /* glow text */
