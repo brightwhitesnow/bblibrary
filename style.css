@@ -80,3 +80,102 @@ nav img {
 
 
 
+.container {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Love Ya Like A Sister', cursive;
+  margin-bottom: 50px;
+}
+
+img {
+ display: flex;
+ justify-content: center;
+ text-align: center;
+ object-fit: cover;
+ width: 245px;
+ height: 320px;
+}
+
+.cart {
+ 
+ background-color: lightgray;
+ padding: 20px;
+ 
+}
+
+.footer {
+ display: flex;
+ justify-content: space-between;
+}
+
+.button1 {
+ border: none;
+ height: 40px;
+ border-radius: 20px;
+ padding: 5px 20px;
+ background-color: #a74d4d;
+ transition: 1s;
+ object-fit: cover;
+}
+
+.button1:hover {
+ background-color: #702a2a;
+ color: white;
+ padding: 5px 50px;
+ transition: 1s;
+ object-fit: cover;
+}
+
+.button2 {
+ border: none;
+ height: 40px;
+ border-radius: 20px;
+ padding: 5px 20px;
+ background-color: #e69e4d;
+ transition: 1s;
+ object-fit: cover;
+}
+
+.button2:hover {
+ background-color: #b48a4a;
+ color: white;
+ padding: 5px 50px;
+ transition: 1s;
+ object-fit: cover;
+}
+
+.button3 {
+ border: none;
+ height: 40px;
+ border-radius: 20px;
+ padding: 5px 20px;
+ background-color: #ffffff;
+ transition: 1s;
+ object-fit: cover;
+}
+
+.button3:hover {
+ background-color: #000000;
+ color: white;
+ padding: 5px 50px;
+ transition: 1s;
+ object-fit: cover;
+}
+
+.button4 {
+ border: none;
+ height: 40px;
+ border-radius: 20px;
+ padding: 5px 20px;
+ background: url(https://miro.medium.com/max/800/1*yLnCpRTkgWVEt6hEWVCVGw.png);
+ transition: 1s;
+ object-fit: cover;
+}
+
+.button4:hover {
+ background: url(https://edsurge.imgix.net/uploads/post/image/12857/guild-1573610501.jpg?auto=compress%2Cformat&w=1024&h=512&fit=crop);
+ color: white;
+ padding: 5px 50px;
+ transition: 1s;
+ object-fit: cover;
+}
