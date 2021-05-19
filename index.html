@@ -2,48 +2,238 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Butterfly Library</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Butterfly Library</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous" />
+  <link href="https://cdn.jsdeliv r.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <style>
+      body {
+          height: 100%;
+          width: 100%;
+          margin-right: 0px;
+      }
+
+    *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    margin-right: 0px;
+}
+
+.navbar-brand img{
+    width:60px;
+}
+.navbar{
+    position:fixed;
+    z-index: 9999;
+    width: 100%;
+    top:0;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5)
+}
+.carousel-item img{
+    width: 100%;
+    height:700px;
+    object-fit: cover;
+}
+
+.card-deck{
+    display:flex;
+    justify-content:space-between;
+}
+.card{
+    margin-bottom: 30px;
+}
+
+  </style>
 </head>
 
-<body>
-    <!--<div class="nav">
-        <img src="bblibrarylogo.png" alt="Logo">
-        <a href="#" class="homealink">Home</a>
-        <a href="#" class="contactalink">Contact</a>
-        <a href="#" class="aboutusalink">About Us</a>
-        <a href="#" class="shopalink">Shop</a>
-    </div> -->
-    <div class="nav">
-
-        <img src="bblibrarylogo.png" alt="" style="width: 60px;height: auto;" class="logo">
-        <a href="index.html">
-            <p>Home</p>
-        </a>
-        <a href="contact.html">
-            <p>Contact</p>
-        </a>
-        <a href="about.html">
-            <p>About Us</p>
-        </a>
-        <a href="shop.html">
-            <p>Shop</p>
-        </a>
+<body style="width: 100%">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-right: 0px;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img
+          src="https://docs.google.com/drawings/d/e/2PACX-1vTGnbWhU9b8hyrBeo3xqhGMu55HwnXDjyAEUsgAyhZVbuMh5ppq9tzIVWBhom_joDnfAOgGkfUNfifH/pub?w=960&h=720"
+          alt="" style="width: 150px;"><br><!--Slogan Here--></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link normal" href="#" tabindex="-1" aria-disabled="false">Disabled</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="banner">
-        <br><br><br><Br>
-        <h1 class="glow">Book Butterfly Library</h1>
+  </nav>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="width: 100%;">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner"style="width: 100%;">
+      <div class="carousel-item active">
+        <img src="https://petapixel.com/assets/uploads/2016/08/1brightenedsmall-800x530.jpg" class="d-block w-100"
+          alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://th.bing.com/th/id/OIP.juA5cc_iCcU2MUHhvvaRSgHaE6?pid=ImgDet&rs=1" class="d-block w-100"
+          alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://th.bing.com/th/id/OIP.M5ximzu_jP_zGVS-eG5mygHaE6?pid=ImgDet&rs=1" class="d-block w-100"
+          alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<br>
+  <div class="row row-cols-1 row-cols-md-3 g-4" style="display: flex;justify-content: space-around;width: 100%;>
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://docs.google.com/drawings/d/e/2PACX-1vTGnbWhU9b8hyrBeo3xqhGMu55HwnXDjyAEUsgAyhZVbuMh5ppq9tzIVWBhom_joDnfAOgGkfUNfifH/pub?w=960&h=720" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://docs.google.com/drawings/d/e/2PACX-1vTGnbWhU9b8hyrBeo3xqhGMu55HwnXDjyAEUsgAyhZVbuMh5ppq9tzIVWBhom_joDnfAOgGkfUNfifH/pub?w=960&h=720" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://docs.google.com/drawings/d/e/2PACX-1vTGnbWhU9b8hyrBeo3xqhGMu55HwnXDjyAEUsgAyhZVbuMh5ppq9tzIVWBhom_joDnfAOgGkfUNfifH/pub?w=960&h=720" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<br>
+
+  <div class="container"style="width: 100%;">
+    <h1 class="text-center mt-5">BB Library</h1>
+    <hr />
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            About Us
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>BB Library</strong> is a library founded in 2020 with age of 1. It is known for its logo. The books you read from the library, are the books from United States of America. That is why it is named Book Butterfly Library. The Library is located in Tien Lang, Haiphong City, Vietnam. 
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            My Skill
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="row text-center">
+              <div class="col-lg-4">
+                <img src="https://img.icons8.com/ios-filled/50/000000/html-5--v1.png" />
+              </div>
+              <div class="col-lg-4">
+                <img src="https://img.icons8.com/windows/32/000000/html.png" />
+              </div>
+              <div class="col-lg-4">
+                <img src="https://img.icons8.com/ios-filled/50/000000/js.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Contact Me
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+
+            <div class="row">
+              <div class="col-lg-4">
+                <lottie-player style="text-align: center;" src="https://assets1.lottiefiles.com/packages/lf20_habjic6t.json"
+                  background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+
+              </div>
+              <div class="col-lg-8">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScbpqHZH0ciUt8QwbIvNlvgjNrMajw-mKMDtPYkkSLbs-olMA/viewform?embedded=true" width="640" height="1150" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+<h1 class="text-center mt-5"style="width: 100%;">Products</h1>
+      <Br><Br>
+<div id="card"style="width: 100%;" class="card-deck row">
+
+      
+
+
+
     </div>
 
 
-    <script src="./script.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
+    </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
+    </script>
 </body>
 
-
-
-
 </html>
-
