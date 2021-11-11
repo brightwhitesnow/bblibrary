@@ -162,7 +162,7 @@ if ($continue != "/") {
 <center>
 <b>Thank you <?php if(isset($_REQUEST['name'])){print stripslashes($_REQUEST['name']);} ?></b>
 <br>Your message has been sent
-<p><a href="<?php print $continue; ?>">Click here to continue</a></p>
+<p><a href="bblibrary.com">Click here to continue</a></p>
 </center>
 </div>
 
