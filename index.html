@@ -2,242 +2,112 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="shortcut icon" type="image/x-icon" href="bblibrarylogo.png">
-  <style>
-    * {
-      margin: 0px;
-      padding: 0px;
-      box-sizing: border-box;
-    }
-
-    .navbar-brand img {
-      width: 60px;
-    }
-
-    .carousel-item img {
-      width: 100%;
-      height: 700px;
-      object-fit: cover;
-    }
-  </style>
-  <title>BB Library</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BB Library</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-
-<body>
-  <nav style="z-index: 5;position: fixed;width: 100%;" class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="bblibrarylogo.png" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Product</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#container">About Us</a>
-          </li>
-        </ul>
-        <!-- <form id="search" class="d-flex">
-          <input class="form-control me-2" type="search" name="inputData" placeholder="Search" aria-label="Search" />
-          <button class="btn btn-outline-warning" type="submit">
-            Search
-          </button>
-        </form> -->
-      </div>
-    </div>
-  </nav>
-
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://th.bing.com/th/id/OIP.XG4y13F825OkxZBC2KZbcQHaEx?pid=ImgDet&rs=1" class="d-block w-100"
-          alt="..." />
-        <div class="carousel-caption d-none d-md-block">
-          <h3>Big Chungus</h3>
-          <p>Is the coolest</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="https://th.bing.com/th/id/R22ca2c876941ae8752df715a56b3dc9b?rik=4zQHaCw4P6KB0Q&pid=ImgRaw"
-          class="d-block w-100" alt="..." />
-        <div class="carousel-caption d-none d-md-block">
-          <h2 class="text-warning">Ben Duc Tuan</h2>
-          <p>Tuan Thich An Chuoi</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="https://th.bing.com/th/id/OIP.YTsT3JdHHMV4i68Rdh4QLAHaEx?pid=ImgDet&rs=1" class="d-block w-100"
-          alt="..." />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-  <div class="container" id="container">
-    <h1 class="text-center mt-5">BB Library</h1>
-    <hr />
-    <div class="accordion" id="accordionExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-            aria-expanded="true" aria-controls="collapseOne">
-            About Us
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>BB Library</strong> is a library and also known as Book Butterfly Library. BB Library got it name as Book Butterfly Library because the books you read, was from the USA. It is located at Đường qua thị trấn Tiên Lãng, Tiên Thanh, Tiên Lãng, Hải Phòng, Vietnam. <hr><br>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d972.0257556604838!2d106.54596167090683!3d20.72310739893788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7504c9615071%3A0xf99a05db5cbaf5d!2sBook%20Bear%20Library!5e1!3m2!1sen!2sus!4v1624544703208!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            My Skill
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <div class="row text-center">
-              <div class="col-lg-4">
-                <img src="https://img.icons8.com/ios-filled/50/000000/html-5--v1.png" />
-              </div>
-              <div class="col-lg-4">
-                <img src="https://img.icons8.com/windows/32/000000/html.png" />
-              </div>
-              <div class="col-lg-4">
-                <img src="https://img.icons8.com/ios-filled/50/000000/js.png" />
-              </div>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+</style>
+<body style="width:100%">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img style="width: auto;height: 50px;margin-right: 10px;" src="bblibrarylogo.png" alt="">
+            <a class="navbar-brand" href="#">BB Library</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.php">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Comming Soon!</a>
+                    </li>
+                </ul>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Contact Me
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body">
+    </nav>
 
-            <div class="row">
-              <div class="col-lg-4">
-                <lottie-player style="text-align: center;" src="https://assets1.lottiefiles.com/packages/lf20_habjic6t.json"
-                  background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-
-              </div>
-              <div class="col-lg-8">
-                <form id="fb" action="formhandler.php">
-                  <div class="form-group">
-                    <label for="usr">Name:</label>
-                    <input name="name" type="text" class="form-control" id="usr">
-                  </div>
-                  <div class="form-group">
-                    <label for="pwd">Email:</label>
-                    <input name="email" type="email" class="form-control" >
-                  </div>
-                  <div class="form-group">
-                    <label for="comment">Comment:</label>
-                    <textarea name="comment" class="form-control" rows="5" id="comment"></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-success mt-2">Success</button>
-                </form>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" style="width:100%;">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" style="width:100%;">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="https://enterprisersproject.com/sites/default/files/styles/google_discover/public/images/cio-book-list.png?itok=MA-MorYW" class="d-block w-100" alt="..." style="height: auto;width: auto;">
                 
-              </div>
             </div>
-
-          </div>
+            <div class="carousel-item" data-bs-interval="9000">
+                <img src="https://cdn.elearningindustry.com/wp-content/uploads/2016/05/top-10-books-every-college-student-read-1024x640.jpeg" class="d-block w-100" alt="..." style="height: auto;width: auto;">
+                
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.british-study.com/en/wp-content/uploads/sites/2/2013/11/Pile-of-books-1.jpg" class="d-block w-100" alt="..." style="height: auto;width: auto;">
+                
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+<br>
+<div class="row row-cols-1 row-cols-md-3 g-4" style="width:100%">
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         </div>
       </div>
-      
-    </div><br>
-    <!-- <h1 class="text-center mt-5">Products</h1>
-    <hr />
-    <div id="card" class="card-deck row">
-
-      
-
-
-
-    </div> -->
     </div>
-    
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
-  </script>
-  <script src="./script.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script>
-    let formfb = document.getElementById("fb")
-    formfb.onsubmit = (e)=>{
-      e.preventDefault()
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<br>
 
-      let name = formfb.name.value
-      let email = formfb.email.value
-      let comment = formfb.comment.value
-
-      $.ajax({
-                   url: './sendEmail.php',
-                   method: 'POST',
-                   dataType: 'json',
-                   data: {
-                       name: name,
-                       email: email,
-                       messenger:comment,
-                   },
-                   success: function (data) {
-                      
-                   }
-               });
-               return false;
-
-
-
-    }
-  </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
